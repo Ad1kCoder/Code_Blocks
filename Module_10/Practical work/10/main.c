@@ -1,14 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define CHOICE 1 //0-Фибоначи; 1 - Матрица
+
+
+#define maxF 2584
 #define sizeArr 5
+#define PRINT(a) printf("%d ", a)
+#define SQR(x) (x)*(x)
+#define RND(min, max) rand()%((max)-(min))+(min)
 
+int F = 0;
 
+int Fibonacci (int n){
+
+    if (n==0) return 0;
+    if (n==1) return 1;
+    return (Fibonacci(n-1)+Fibonacci(n-2));
+}
 
 void recRand(int *ar, int size){
-    if (size==0) *ar = rand()%127;
+    if (size==0) *ar = RND(0, 127);
     else{
-        *(ar+size)=rand()%127;
+        *(ar+size)=RND(0, 127);
         recRand(ar,size-1);
     }
 }
@@ -22,11 +36,18 @@ void recNull(int *ar, int size){
 
 }
 
-
-int main(){
-
-    //int sizeArr = 5;
-    int fullSizeArr = sizeArr*sizeArr;
+int main()
+{
+#if CHOICE==0
+    while(F<maxF){
+        static n = 0;
+        F = Fibonacci(n);
+        PRINT(F);
+        n++;
+    }
+#endif // CHOICE
+#if CHOICE==1
+    int fullSizeArr = SQR(sizeArr);
     int val, seed;
     int arrVar[sizeArr][sizeArr];
     int arrGuess[sizeArr][sizeArr];
@@ -50,5 +71,6 @@ int main(){
         }
         puts("\n");
     }
-    return 0;
+#endif // CHOICE
+
 }

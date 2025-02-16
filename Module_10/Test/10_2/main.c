@@ -2,13 +2,15 @@
 #include <stdlib.h>
 
 #define sizeArr 5
+#define SQR(x) (x)*(x)
+#define RND(min, max) rand()%((max)-(min))+(min)
 
 
 
 void recRand(int *ar, int size){
-    if (size==0) *ar = rand()%127;
+    if (size==0) *ar = RND(0, 127);
     else{
-        *(ar+size)=rand()%127;
+        *(ar+size)=RND(0, 127);
         recRand(ar,size-1);
     }
 }
@@ -25,8 +27,7 @@ void recNull(int *ar, int size){
 
 int main(){
 
-    //int sizeArr = 5;
-    int fullSizeArr = sizeArr*sizeArr;
+    int fullSizeArr = SQR(sizeArr);
     int val, seed;
     int arrVar[sizeArr][sizeArr];
     int arrGuess[sizeArr][sizeArr];
