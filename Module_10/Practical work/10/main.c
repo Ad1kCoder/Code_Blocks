@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define CHOICE 1 //0-Фибоначи; 1 - Матрица
+#define CHOICE 1 //0-Р¤РёР±РѕРЅР°С‡Рё; 1 - РњР°С‚СЂРёС†Р°
 
 
 #define maxF 2584
