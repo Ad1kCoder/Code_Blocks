@@ -6,9 +6,9 @@
 
 int main()
 {
-    srand(256);
-    for(int i=1;i<=15;i++)
-        printf("%d\t%s %s\n", i, nameM(),patronymicM());
+    srand(0);
+    for(int i=1;i<=100;i++)
+        printf("%d\t%s %s %s\n", i,surnameM(), nameM(), patronymicM());
     return 0;
 }
 

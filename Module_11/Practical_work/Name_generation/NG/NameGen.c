@@ -21,7 +21,7 @@ char *nameM (void){
           "Yakov", "Emir", "Svyatoslav", "Boris", "Valery", "Adrian", "Vasily", "Artemy", "Luka", "Ibrahim", "Savely", "Tikhon",\
            "Marat", "Anatoly", "Kamil", "Danil", "Danis", "Arkady", "Seraphim", "Nazar", "Daniyar", "Bilal", "Arsen"};
     //int r = rand()%5;
-    return names[rand()%100];
+    return names[RND(1,100)];
 }
 
 
@@ -34,19 +34,20 @@ char *patronymicM(void){
          "Makarovich", "Savelievich", "Grigorievich", "Ivanovich", "Tikhonovich","Romanovich", "Zakharovich", "Borisovich",\
           "Mikhailovich", "Egorovich", "Egorovich", "Zakharovich"};
 
-    return patronymics[rand()%55];
+    return patronymics[RND(1,55)];
 }
 
 
 char *surnameM(void){
-    char *surnames[] ={"Gromov", "Kulikov", "Mikheev", "Shiryaev", "Tsvetkov", "Alekseev", "Bragin", "Evdokimov", "Burov", "Rogov", "Makarov", "Lazarev",\
-     "Filatov", "Shestakov", "Vasiliev", "Zhuravlev", "Gushchin", "Zhukov", "Gusev", "Molchanov", "Terentyev", "Ustinov", "Mishin", "Sysoev", "Orlov", "Savin",\
-      "Kononov", "Ignatov", "Anisimov", "Artemyev", "Zuev", "Biryukov", "Shilov", "Ryabov", "Kryukov", "Mamontov", "Borisov", "Fedotov", "Panov", "Dyachkov",\
-       "Novikov", "Strelkov", "Morozov", "Koshelev", "Bogdanov", "Stepanov", "Danilov", "Zuev", "Arkhipov", "Belyaev", "Petukhov", "Bobylev", "Komissarov",\
-        "Kostin", "Sidorov", "Koshelev", "Ermakov", "Andreev", "Zaitsev", "Fedorov", "Sorokin", "Afanasyev", "Kryukov", "Koshelev", "Frolov", "Panfilov",\
-         "Ivanov", "Stepanov", "Gordeev", "Efimov", "Zhukov", "Veselov", "Tretyakov", "Guryev", "Orekhov", "Zuev", "Koshelev", "Lapin", "Bobrov", "Suvorov",\
-          "Rybakov", "Seleznev", "Sergeev", "Efremov", "Lytkin", "Filippov", "Blokhin", "Lazarev", "Shiryaev", "Novikov", "Nikolaev", "Avdeev", "Maksimov",\
-           "Kharitonov"};
+    char *surnames[] ={"Gromov", "Kulikov", "Mikheev", "Shiryaev", "Tsvetkov", "Alekseev", "Bragin", "Evdokimov", "Burov", "Rogov",\
+     "Makarov", "Lazarev","Filatov", "Shestakov", "Vasiliev", "Zhuravlev", "Gushchin", "Zhukov", "Gusev", "Molchanov", "Terentyev",\
+      "Ustinov", "Mishin", "Sysoev", "Orlov", "Savin","Kononov", "Ignatov", "Anisimov", "Artemyev", "Zuev", "Biryukov", "Shilov",\
+       "Ryabov", "Kryukov", "Mamontov", "Borisov", "Fedotov", "Panov", "Dyachkov","Novikov", "Strelkov", "Morozov", "Koshelev",\
+        "Bogdanov", "Stepanov", "Danilov", "Zuev", "Arkhipov", "Belyaev", "Petukhov", "Bobylev", "Komissarov","Kostin", "Sidorov",\
+         "Koshelev", "Ermakov", "Andreev", "Zaitsev", "Fedorov", "Sorokin", "Afanasyev", "Kryukov", "Koshelev", "Frolov", "Panfilov",\
+         "Ivanov", "Stepanov", "Gordeev", "Efimov", "Zhukov", "Veselov", "Tretyakov", "Guryev", "Orekhov", "Zuev", "Koshelev", "Lapin",\
+          "Bobrov", "Suvorov","Rybakov", "Seleznev", "Sergeev", "Efremov", "Lytkin", "Filippov", "Blokhin", "Lazarev", "Shiryaev",\
+           "Novikov", "Nikolaev", "Avdeev", "Maksimov", "Kharitonov"};
 
-    return surnames[rand()%100];
+    return surnames[RND(1,100)];
 }
