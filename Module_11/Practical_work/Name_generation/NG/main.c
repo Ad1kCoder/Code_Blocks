@@ -2,20 +2,14 @@
 #include <stdlib.h>
 #include "NameGen.h"
 
-char *nameM (void);
 
 
 int main()
 {
-    printf("%s\n", nameM());
+    srand(0);
+    for(int i=1;i<=24;i++)
+        printf("%d\t%s %s %s\n", i,surnameM(), nameM(), patronymicM());
     return 0;
 }
 
 
-char *nameM (void){
-
-    char *names[] ={"Ilya", "Alexander", "Ivan", "Svyatoslav", "Gleb"};
-    int r = rand()%5;
-    return names[r];
-
-}
