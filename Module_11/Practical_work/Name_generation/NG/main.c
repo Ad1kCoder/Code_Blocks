@@ -2,19 +2,17 @@
 #include <stdlib.h>
 #include "NameGen.h"
 
-char *nameMale (void);
+char *nameM (void);
 
 
 int main()
 {
-   /* char *names[] ={"Ilya", "Alexander", "Ivan", "Svyatoslav", "Gleb"};
-    int r = rand()%5;*/
-    printf("%s\n", nameMale());
+    printf("%s\n", nameM());
     return 0;
 }
 
 
-char *nameMale (void){
+char *nameM (void){
 
     char *names[] ={"Ilya", "Alexander", "Ivan", "Svyatoslav", "Gleb"};
     int r = rand()%5;
