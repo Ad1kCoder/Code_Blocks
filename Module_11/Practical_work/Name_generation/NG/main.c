@@ -2,11 +2,11 @@
 #include <stdlib.h>
 #include "NameGen.h"
 
-
+char *names[] ={"Ilya", "Alexander", "Ivan", "Svyatoslav", "Gleb"};
 
 int main()
 {
-    printHello(5);
+    printf("%s\n", names[2]);
     return 0;
 }
 
