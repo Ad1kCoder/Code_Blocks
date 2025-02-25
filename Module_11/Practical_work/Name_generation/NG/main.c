@@ -7,8 +7,8 @@
 int main()
 {
     srand(256);
-    for(int i=1;i<=5;i++)
-        printf("%d %s\t %s\n", i, nameM(),patronymicM());
+    for(int i=1;i<=15;i++)
+        printf("%d\t%s %s\n", i, nameM(),patronymicM());
     return 0;
 }
 

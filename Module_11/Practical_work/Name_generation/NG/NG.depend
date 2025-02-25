@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1740478627 source:c:\users\user\documents\github\code_blocks\module_11\practical_work\name_generation\ng\main.c
+1740481708 source:c:\users\user\documents\github\code_blocks\module_11\practical_work\name_generation\ng\main.c
 	<stdio.h>
 	<stdlib.h>
 	"NameGen.h"

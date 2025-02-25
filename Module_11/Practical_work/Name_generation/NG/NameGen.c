@@ -12,7 +12,7 @@ void printHello(int i)
 char *nameM (void){
 
     char *names[] ={"Alexander", "Sergey", "Daniil", "Zakhar", "Ilya", "Timofey", "Nikita", "Mark",\
-     "Plato", "Miron", "Artyom", "Egor", "Fedor", "Adam", "Marcel", "Andrey", "Nikolay", "Peter", "Mikhail",\
+     "Platon", "Miron", "Artyom", "Egor", "Fedor", "Adam", "Marcel", "Andrey", "Nikolay", "Peter", "Mikhail",\
      "Ivan", "Dmitry", "Maxim", "Stepan", "Matvey", "Konstantin", "Vadim", "Timur", "Anton", "Arseny", "Rodion",\
       "Danila", "Daniel", "Kirill", "Lev", "Gleb", "Vyacheslav", "Ruslan", "Elisha", "Emil", "Danil", "Pavel", "Miroslav",\
        "Georgy", "David", "Grigory", "Victor", "Yaroslav", "Evgeniy", "Leonid", "Aleksey", "Vsevolod", "Vladimir",\
@@ -39,7 +39,14 @@ char *patronymicM(void){
 
 
 char *surnameM(void){
-    char *surnames[] ={};
+    char *surnames[] ={"Gromov", "Kulikov", "Mikheev", "Shiryaev", "Tsvetkov", "Alekseev", "Bragin", "Evdokimov", "Burov", "Rogov", "Makarov", "Lazarev",\
+     "Filatov", "Shestakov", "Vasiliev", "Zhuravlev", "Gushchin", "Zhukov", "Gusev", "Molchanov", "Terentyev", "Ustinov", "Mishin", "Sysoev", "Orlov", "Savin",\
+      "Kononov", "Ignatov", "Anisimov", "Artemyev", "Zuev", "Biryukov", "Shilov", "Ryabov", "Kryukov", "Mamontov", "Borisov", "Fedotov", "Panov", "Dyachkov",\
+       "Novikov", "Strelkov", "Morozov", "Koshelev", "Bogdanov", "Stepanov", "Danilov", "Zuev", "Arkhipov", "Belyaev", "Petukhov", "Bobylev", "Komissarov",\
+        "Kostin", "Sidorov", "Koshelev", "Ermakov", "Andreev", "Zaitsev", "Fedorov", "Sorokin", "Afanasyev", "Kryukov", "Koshelev", "Frolov", "Panfilov",\
+         "Ivanov", "Stepanov", "Gordeev", "Efimov", "Zhukov", "Veselov", "Tretyakov", "Guryev", "Orekhov", "Zuev", "Koshelev", "Lapin", "Bobrov", "Suvorov",\
+          "Rybakov", "Seleznev", "Sergeev", "Efremov", "Lytkin", "Filippov", "Blokhin", "Lazarev", "Shiryaev", "Novikov", "Nikolaev", "Avdeev", "Maksimov",\
+           "Kharitonov"};
 
-    return surnames[rand()%55];
+    return surnames[rand()%100];
 }
