@@ -7,8 +7,8 @@
 int main()
 {
     srand(1);
-    for(int i=0;i<5;i++)
-        printf("%s\n", nameM());
+    for(int i=1;i<=5;i++)
+        printf("%d %s\n", i, nameM());
     return 0;
 }
 
