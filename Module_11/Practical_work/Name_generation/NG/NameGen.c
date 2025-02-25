@@ -10,7 +10,6 @@ void printHello(int i)
 
 
 char *nameM (void){
-
     char *names[] ={"Alexander", "Sergey", "Daniil", "Zakhar", "Ilya", "Timofey", "Nikita", "Mark",\
      "Platon", "Miron", "Artyom", "Egor", "Fedor", "Adam", "Marcel", "Andrey", "Nikolay", "Peter", "Mikhail",\
      "Ivan", "Dmitry", "Maxim", "Stepan", "Matvey", "Konstantin", "Vadim", "Timur", "Anton", "Arseny", "Rodion",\
@@ -62,22 +61,35 @@ char *surnameM(void){
 }
 
 char *nameF (void){
-
-    char *names[] ={};
+    char *names[] ={"Darya", "Ulyana", "Anastasia", "Sofia", "Arina", "Valeria", "Alisa", "Zoya", "Zlata", "Victoria", "Kira", "Nicole",\
+     "Ksenia", "Veronica", "Yana", "Sofia", "Stefania", "Amina", "Olga", "Evgenia", "Mia", "Diana", "Karina", "Tatyana", "Milana", "Mila",\
+      "Vera", "Safiya", "Vasilisa", "Agata", "Lydia", "Monica", "Alexandra", "Maria", "Elina", "Anna", "Elizaveta", "Varvara", "Polina",\
+       "Antonina", "Ekaterina", "Marina", "Margarita", "Serafima", "Maya", "Svetlana", "Christina", "Alina", "Irina", "Emilia", "Maryam",\
+        "Eva", "Yasina", "Aisha", "Alena", "Camilla", "Marianna", "Nadezhda", "Taisiya", "Yesenia", "Adele", "Yasmina", "Miroslava", "Vladislava",\
+         "Amelia", "Alicia", "Darina", "Angelina", "Julia", "Regina", "Asia", "Nika", "Ariana", "Elena", "Lyubov", "Adelina", "Aisha", "Aliya", "Lea",\
+          "Malika", "Carolina", "Sabrina", "Melania", "Adela", "Valentina", "Pelageya", "Madina", "Lilia", "Teona", "Evdokia", "Agnia", "Mira",\
+           "Tamara", "Yaroslava", "Nina", "Anfisa", "Maryana", "Aida", "Kamila", "Fatima"};
 
     return names[RND(0,sizeof(names)/sizeof(*names))];
 }
 
 
 char *patronymicF(void){
-    char *patronymics[] ={};
+    char *patronymics[] ={"Ivanovna", "Mikhailovna", "Borisovna", "Alekseevna", "Ilyinichna", "Andreevna", "Denisovna", "Antonovna",\
+     "Nikolaevna", "Nikitovna", "Stanislavovna", "Andreevna", "Fedorovna", "Kirillovna", "Yuryevna", "Dmitrievna", "Maksimovna", "Kirillovna",\
+      "Vadimovna", "Anatolyevna", "Borisovna", "Valerievna", "Ilyinichna", "Stepanovna", "Denisovna", "Kirillovna", "Romanovna", "Mikhailovna",\
+       "Vasilievna", "Vadimovna", "Georgievna", "Sergeevna", "Fedorovna", "Fedorovna", "Ivanovna", "Ilyinichna", "Antonovna", "Kirillovna", \
+        "Daniilovna", "Sergeevna", "Pavlovna", "Arkadievna", "Vitalievna", "Vladislavovna", "Sergeevna", "Eduardovna", "Arsenievna", "Konstantinovna",\
+         "Maksimovna", "Arkadievna", "Alexandrovna", "Alexendrovna", "Ivanovna", "Leonidovna", "Stanislavovna", "Egorovna", "Denisovna", "Olegovna",\
+          "Egorovna", "Pavlovna", "Ivanovna", "Mikhailovna", "Alekseevna", "Leonidovna", "Viktorovna", "Petrovna", "Evgenievna", "Peterovna", "Borisovna",\
+           "Yuryevna", "Anatolyevna", "Vladimirovna", "Viktorovna", "Gennadievna", "Vyacheslavovna", "Danilovna"};
 
     return patronymics[RND(0,sizeof(patronymics)/sizeof(*patronymics))];
 }
 
 
 char *surnameF(void){
-    char *surnames[] ={};
+    char *surnames[] ={Ignatieva, Blokhina, Popova, Kovaleva, Nekrasova, Shcherbakova, Orlova, Gromova, Sitnikova, Silina, Andreeva, Kiseleva, Kudryavtseva, Naumova, Petrova, Larionova, Nikolaeva, Ponomareva, Orlova, Isaeva, Vishnyakova, Anisimova, Kostina, Yasheva, Rogova, Loginova, Yakusheva, Golubeva, Sitnikova, Simonova, Titova, Terentyeva, Baranova, Grishina, Frolova, Morozova, Khokhlova, Kulagina, Eliseeva, Denisova, Kabanova, Isakova, Zhdanova, Larionova, Popova, Selezneva, Zykova, Volkova, Moiseeva, Odintsova, Novikova, Kotova, Mukhina, Efimova, Zakharova, Strelkova, Kuznetsova, Khokhlova, Shubina, Baranova, Sidorova, Nekrasova, Mamontova, Aleksandrova, Efimova, Dykova, Guryeva, Krasilnikova, Tikhonova, Mikhailova, Kotova, Odintsova, Doronina, Galkina, Isaeva, Ustinova, Veselova, Eliseeva, Ershova, Filatova, Potapova, Merkusheva, Kirillova, Kondratyeva, Moiseeva, Kulakova, Samoylova, Markova, Merkusheva, Nikonova, Fokina, Morozova, Lapina, Gorshkova, Kolobova, Gorbunova, Isanova, Alekseeva, Kazakova, Efimova};
 
     return surnames[RND(0,sizeof(surnames)/sizeof(*surnames))];
 }
