@@ -25,14 +25,21 @@ char *nameM (void){
 }
 
 
-char *surnameM(void){
-    char *surnames[] ={"Markovich", "Stepanovich", "Artemovich", "Ivanovich", "Maksimovich", "Konstantinovich", "Rodionovich",\
+char *patronymicM(void){
+    char *patronymics[] ={"Markovich", "Stepanovich", "Artemovich", "Ivanovich", "Maksimovich", "Konstantinovich", "Rodionovich",\
      "Demidovich", "Denisovich", "Mikhailovich", "Glebovich", "Davidovich", "Matveevich", "Maksimovich", "Artemovich", "Maksimovich",\
-      "Saveliy", "Mikhailovich","Artemovich", "Dmitrievich", "Ivanovich", "Timofeevich", "Mikhailovich", "Ilyich", "Yakovlevich",\
+      "Saveliych", "Mikhailovich","Artemovich", "Dmitrievich", "Ivanovich", "Timofeevich", "Mikhailovich", "Ilyich", "Yakovlevich",\
        "Artemovich", "Andreevich", "Davidovich","Maksimovich", "Romanovich", "Lvovich", "Andreevich", "Leonovich", "Artemyevich",\
         "Fedorovich", "Mikhailovich", "Olegovich", "Georgievich","Dmitrievich", "Markovich", "Sergeevich", "Zakharovich", "Denisovich",\
          "Makarovich", "Savelievich", "Grigorievich", "Ivanovich", "Tikhonovich","Romanovich", "Zakharovich", "Borisovich",\
           "Mikhailovich", "Egorovich", "Egorovich", "Zakharovich"};
+
+    return patronymics[rand()%55];
+}
+
+
+char *surnameM(void){
+    char *surnames[] ={};
 
     return surnames[rand()%55];
 }
