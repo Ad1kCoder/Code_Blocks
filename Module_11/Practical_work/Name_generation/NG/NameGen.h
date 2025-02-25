@@ -4,5 +4,6 @@
 #define RND
 
 void printHello(int i);
+char *nameM (void);
 
 #endif

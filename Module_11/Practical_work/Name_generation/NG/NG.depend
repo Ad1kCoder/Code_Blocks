@@ -1,12 +1,12 @@
 # depslib dependency file v1.0
-1740418143 source:c:\users\user\documents\github\code_blocks\module_11\practical_work\name_generation\ng\main.c
+1740471999 source:c:\users\user\documents\github\code_blocks\module_11\practical_work\name_generation\ng\main.c
 	<stdio.h>
 	<stdlib.h>
 	"NameGen.h"
 
-1740417232 c:\users\user\documents\github\code_blocks\module_11\practical_work\name_generation\ng\namegen.h
+1740471026 c:\users\user\documents\github\code_blocks\module_11\practical_work\name_generation\ng\namegen.h
 
-1740417580 source:c:\users\user\documents\github\code_blocks\module_11\practical_work\name_generation\ng\namegen.c
+1740471932 source:c:\users\user\documents\github\code_blocks\module_11\practical_work\name_generation\ng\namegen.c
 	<stdio.h>
 	"NameGen.h"
 
