@@ -89,7 +89,15 @@ char *patronymicF(void){
 
 
 char *surnameF(void){
-    char *surnames[] ={Ignatieva, Blokhina, Popova, Kovaleva, Nekrasova, Shcherbakova, Orlova, Gromova, Sitnikova, Silina, Andreeva, Kiseleva, Kudryavtseva, Naumova, Petrova, Larionova, Nikolaeva, Ponomareva, Orlova, Isaeva, Vishnyakova, Anisimova, Kostina, Yasheva, Rogova, Loginova, Yakusheva, Golubeva, Sitnikova, Simonova, Titova, Terentyeva, Baranova, Grishina, Frolova, Morozova, Khokhlova, Kulagina, Eliseeva, Denisova, Kabanova, Isakova, Zhdanova, Larionova, Popova, Selezneva, Zykova, Volkova, Moiseeva, Odintsova, Novikova, Kotova, Mukhina, Efimova, Zakharova, Strelkova, Kuznetsova, Khokhlova, Shubina, Baranova, Sidorova, Nekrasova, Mamontova, Aleksandrova, Efimova, Dykova, Guryeva, Krasilnikova, Tikhonova, Mikhailova, Kotova, Odintsova, Doronina, Galkina, Isaeva, Ustinova, Veselova, Eliseeva, Ershova, Filatova, Potapova, Merkusheva, Kirillova, Kondratyeva, Moiseeva, Kulakova, Samoylova, Markova, Merkusheva, Nikonova, Fokina, Morozova, Lapina, Gorshkova, Kolobova, Gorbunova, Isanova, Alekseeva, Kazakova, Efimova};
+    char *surnames[] ={"Ignatieva", "Blokhina", "Porova", "Kovaleva", "Krasova", "Shcherbakova", "Orlovich", "Gromova", "Sotnikova", "Silina",\
+     "Andreeva", "Kiseleva", "Kudryavtseva", "Naumova", "Petrova", "Lanionova", "Nikolaeva", "Ponomareva", "Orlova", "Esaeva", "Vishnyakova",\
+      "Anisimova", "Kostina", "Yasheva", "Rogova", "Loginova", "Yakusheva", "Golubeva", "Sitnikova", "Simonova", "Titova", "Terentyeva", "Baronova",\
+       "Grishina", "Frolova", "Morozina", "Khokhlovich", "Kulagina", "Eniseeva", "Denisova", "Kabanova", "Isakova", "Zhdanova", "Larionova", "Popova",\
+        "Selezneva", "Zykova", "Volkova", "Moliseevich", "Olintsova", "Novikova", "Kononova", "Mukhina", "Efimova", "Zakharova", "Strelkova", "Kuznetsova",\
+         "Khokhlova", "Shubina", "Baranova", "Sidorova", "Nekrasova", "Mamontova", "Aleksandrova", "Efomovich", "Dykova", "Guryeva", "Krasilnikova",\
+          "Tikhonova", "Mikhailova", "Kotova", "Odintsova", "Doronina", "Galkina", "Isaeva", "Ustinova", "Veselova", "Eliseeva", "Ershova", "Filatova",\
+           "Potapova", "Mikusheva", "Kirillova", "Kondratyeva", "Moiseeva", "Kulakova", "Samoylova", "Markova", "Merkusheva", "Nikonova", "Fokina",\
+            "Morozova", "Lapina", "Gorshkova", "Kolobova", "Gorbunova", "Isanova", "Alekseeva", "Kazakova", "Efremova"};
 
     return surnames[RND(0,sizeof(surnames)/sizeof(*surnames))];
 }
