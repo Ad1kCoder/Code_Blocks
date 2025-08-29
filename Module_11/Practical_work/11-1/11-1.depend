@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1740509182 source:c:\users\Никита\onedrive\documents\code blocks\module_11\practical_work\name_generation\ng\namegen.c
+	<stdio.h>
+	"NameGen.h"
+
+1740508138 c:\users\Никита\onedrive\documents\code blocks\module_11\practical_work\name_generation\ng\namegen.h
+
+1756481610 source:c:\users\Никита\onedrive\documents\code blocks\module_11\practical_work\11-1\main.c
+	<stdio.h>
+	<stdlib.h>
+
