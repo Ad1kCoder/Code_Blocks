@@ -30,38 +30,41 @@ int main()
     scanf("%u", &seed);
     srand(seed);
     int sizeGroup = RND(15,37);
-    int rndGradeLevel = RND (5,11);
+    int rndGradeLevel = RND (5,12);
     Student group[sizeGroup];
-
-    for (int i=0; i < sizeGroup; i++){
-        if (randomGender() == MALE){
-            strcpy(group[i].name, nameM());
-            strcpy(group[i].patronymic, patronymicM());
-            strcpy(group[i].surname, surnameM());
-            group[i].gender = MALE;
-        } else {
-            strcpy(group[i].name, nameF());
-            strcpy(group[i].patronymic, patronymicF());
-            strcpy(group[i].surname, surnameF());
-            group[i].gender = FEMALE;
-        }
-        group[i].mark = RND (3,10);
-    }
-
-    for (int i=0; i < sizeGroup; i++){
-        printf("%s\t\t\t", group[i].surname);
-        printf("%s\t\t\t", group[i].name);
-        printf("%s\t\t\t", group[i].patronymic);
-        if (group[i].gender == MALE) printf("M\t");
-        else printf("F\t");
-        printf("%d\n", group[i].mark);
-    }
-    /*char lol[50];
-    strcpy(lol, nameM());
-    printf("%s\n", lol);*/
+    fillGroup (group, sizeGroup);
+    printGroup(group, sizeGroup);
     return 0;
 }
 
 Gender randomGender(void) {
     return RND(0, 2) == 0 ? MALE : FEMALE;
+}
+
+int printGroup (Student *gr, int size){
+    for (int i=0; i < size; i++){
+        printf("%-15.15s\t", gr[i].surname);
+        printf("%-15.15s\t", gr[i].name);
+        printf("%-15.15s\t", gr[i].patronymic);
+        gr[i].gender == MALE ? printf("M\t"):printf("F\t");
+        printf("%d\n", gr[i].mark);
+    }
+    return 0;
+}
+
+int fillGroup (Student *gr, int size){
+    for (int i=0; i < size; i++){
+        if (randomGender() == MALE){
+            strcpy(gr[i].name, nameM());
+            strcpy(gr[i].patronymic, patronymicM());
+            strcpy(gr[i].surname, surnameM());
+            gr[i].gender = MALE;
+        } else {
+            strcpy(gr[i].name, nameF());
+            strcpy(gr[i].patronymic, patronymicF());
+            strcpy(gr[i].surname, surnameF());
+            gr[i].gender = FEMALE;
+        }
+        gr[i].mark = RND (3,11);
+    }
 }
