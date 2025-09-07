@@ -4,7 +4,7 @@
 #define RND(min, max) rand()%((max)-(min))+(min)
 
 
-#define CHOICE 0
+#define CHOICE 1 //0 - сортировка по успеваемости, 1 - зависимость успеваемости от пола
 
 unsigned int seed;
 
@@ -29,11 +29,6 @@ int compMark (const void *a, const void *b);
 int whoIsSmart(Student *gr, int size);
 
 
-
-
-
-
-
 int main()
 {
     printf("Enter seed for random generation: ");
@@ -46,11 +41,15 @@ int main()
     fillGroup (group, sizeGroup);
     qsort(group,sizeGroup, sizeof(*group), compSurname); // Сортировка по алфавиту
     printGroup(group, sizeGroup, rndSubject, rndGradeLevel);
-    printf("\nAverage mark of group: %f\n", averageMark (group, sizeGroup));
+    printf("\nAverage mark of group: %.2f\n", averageMark (group, sizeGroup));
+    printf("\nSize of group: %d\n", sizeGroup);
+#if CHOICE == 0
     qsort(group,sizeGroup, sizeof(*group), compMark);   // Сортировка по успеваемости
     printGroup(group, sizeGroup, rndSubject, rndGradeLevel);
+#endif // CHOICE
+#if CHOICE == 1
     whoIsSmart(group, sizeGroup);
-
+#endif // CHOICE
     return 0;
 }
 
@@ -129,6 +128,7 @@ int whoIsSmart(Student *gr, int size){
         }
     }
     if (((float)markM/nM)>((float)markF/nF)) printf("\nGuys are %f times smarter than girls\n",(((float)markM/nM)/((float)markF/nF)));
+    else if (((float)markM/nM)==((float)markF/nF)) printf("\nGuys and girls are equally smart 1:1\n");
     else printf("\nGirls are %f times smarter than guys \n",(((float)markF/nF)/((float)markM/nM)));
 }
 
