@@ -36,12 +36,20 @@ int main(){
 
 #if MODE == SEARCH_BY_WORD
     char keyword[50];
+    int notFound = 1;
     printf("Enter a keyword to search: ");
     scanf("%s", &keyword);
     wordToLover(keyword);
-
-
-
+    for (int i = 0; i < LIB_SIZE; ++i){
+        char tcopy[50];
+        strcpy(tcopy, library[i].title);
+        wordToLover(tcopy);
+        if (strstr(tcopy, keyword) != NULL) {
+        printBook(library, i);
+        notFound = 0;
+        }
+    }
+    if (notFound) printf ("\nKeyword not found\n");
 #elif MODE == PRINT_ALL
     for(int i = 0;i < LIB_SIZE; ++i) printBook(library, i);
 #endif
