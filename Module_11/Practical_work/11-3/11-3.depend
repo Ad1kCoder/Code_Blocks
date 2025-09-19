@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1758288143 source:c:\users\user\documents\github\code_blocks\module_11\practical_work\11-3\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"NameGen.h"
+
+1758268703 c:\users\user\documents\github\code_blocks\module_11\practical_work\namegen\namegen.h
+
