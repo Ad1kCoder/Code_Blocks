@@ -30,10 +30,12 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
+			<Add directory="../NameGen" />
 		</Compiler>
-		<Unit filename="../Name_generation/NG/NameGen.c">
-			<Option compilerVar="CC" />
-		</Unit>
+		<Linker>
+			<Add library="../NameGen/bin/Debug/libNameGen.a" />
+			<Add directory="../NameGen/bin/Debug" />
+		</Linker>
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
