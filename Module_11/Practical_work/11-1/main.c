@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "NameGen.h"
 #define RND(min, max) rand()%((max)-(min))+(min)
 
 
@@ -24,16 +25,18 @@ char rndSubject[50];
 Gender randomGender(void);
 int compSurname (const void *x, const void *y);
 float averageMark (Student *gr, int size);
-char *subject(void);
+const char *subject(void);
 int compMark (const void *a, const void *b);
-int whoIsSmart(Student *gr, int size);
+void whoIsSmart(Student *gr, int size);
+void fillGroup (Student *gr, int size);
+int  printGroup(Student *gr, int size, const char *sbj, int gradeLevel);
 
 
 int main()
 {
     printf("Enter seed for random generation: ");
     scanf("%u", &seed);
-    srand(seed);
+    set_namegen_seed(seed);
     int sizeGroup = RND(15,37);
     int rndGradeLevel = RND (5,12);
     strcpy(rndSubject, subject());
@@ -57,7 +60,7 @@ Gender randomGender(void) {
     return RND(0, 2) == 0 ? MALE : FEMALE;
 }
 
-int printGroup (Student *gr, int size, char *sbj, int gradeLevel){
+int printGroup (Student *gr, int size, const char *sbj, int gradeLevel){
     printf ("\nSubject: %s\t Grade: %dA\n\n", sbj, gradeLevel);
     printf("%-15s %-15s %-13s %-8s %-5s\n", "Surname", "Name", "Patronymic", "Gender", "Mark");
     printf("-------------------------------------------------------------\n");
@@ -71,7 +74,7 @@ int printGroup (Student *gr, int size, char *sbj, int gradeLevel){
     return 0;
 }
 
-int fillGroup (Student *gr, int size){
+void fillGroup (Student *gr, int size){
     for (int i=0; i < size; i++){
         if (randomGender() == MALE){
             strcpy(gr[i].surname, surnameM());
@@ -102,7 +105,7 @@ float averageMark (Student *gr, int size){
     return ((float)sum/size);
 }
 
-char *subject(void){
+const char *subject(void){
     char *subjects[] ={"Russian Language","Literature","Foreign Language","Mathematics","History","Social Studies",\
     "Geography","Biology","Physical Education","Art","Music","Technology", "Life Safety" };
 
@@ -116,7 +119,7 @@ int compMark (const void *a, const void *b){
         return ((studentB ->mark) - (studentA ->mark));
 }
 
-int whoIsSmart(Student *gr, int size){
+void whoIsSmart(Student *gr, int size){
     int markM=0, markF=0, nM=0, nF=0;
     for (int i=0; i < size; i++){
         if (gr[i].gender == MALE){
