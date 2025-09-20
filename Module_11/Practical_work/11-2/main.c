@@ -8,9 +8,9 @@
 #define SEARCH_BY_WORD   1   // выполнять задание: поиск по ключевому слову
 
 
-#ifndef MODE
+
 #define MODE SEARCH_BY_WORD
-#endif
+
 
 
 #define ISBN_P 1 //1 - выводить ISBN при печати, 0 - не выводить
