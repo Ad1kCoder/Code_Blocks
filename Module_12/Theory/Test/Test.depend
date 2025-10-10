@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1759581105 source:c:\users\user\documents\github\code_blocks\module_12\theory\test\main.c
+	<stdio.h>
+	<stdlib.h>
+
