@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1760193305 source:c:\users\user\documents\github\code_blocks\module_13\practical_work\13-1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<time.h>
+
