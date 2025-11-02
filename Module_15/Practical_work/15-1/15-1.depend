@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1762077913 source:c:\users\user\documents\github\code_blocks\module_15\practical_work\15-1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"raylib.h"
+
+1731932645 c:\raylib\raylib-5.5_win64_mingw-w64\include\raylib.h
+	<stdarg.h>
+	<stdbool.h>
+
+1731932645 c:\raylib\include\raylib.h
+	<stdarg.h>
+	<stdbool.h>
+
