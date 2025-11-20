@@ -13,7 +13,7 @@
 #define MOV_AVER     1 // бегущее среднее
 #define CUT_MOV_AVER 2 // усеченное бегущее среднее
 
-#define FILTR_MODE CUT_MOV_AVER
+#define FILTR_MODE MEDIAN
 
 
 float noiseRatio = 0.2; // коэф. шума; 0 - без шума, 1 - шум равен амплитуде
@@ -45,7 +45,7 @@ int main()
     for (int i = 0; i < num; i++)
     {
 #if FILTR_MODE == MEDIAN
-        arrF[i] = median(arrN, num, i);
+        arrF[i] = median(NULL, num, i);
 #elif FILTR_MODE == MOV_AVER
         arrF[i] = movAverage(arrN, num, i);
 #elif FILTR_MODE == CUT_MOV_AVER
