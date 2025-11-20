@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1761713003 source:c:\users\user\documents\github\code_blocks\test\main.c
+	<stdio.h>
+	<stdlib.h>
+	<raylib.h>
+
